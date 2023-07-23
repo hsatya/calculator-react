@@ -71,8 +71,8 @@ const App = () => {
 
   return (
     <div>
-      <h1>Calculator</h1>
       <div className='container'>
+        <h1>Calculator</h1>
         <div className='item'>
           <div className='display'>{display}</div>
         </div>
@@ -87,7 +87,7 @@ const App = () => {
             </button>
           ))}
         </div>
-        <div className='display result'>{result}</div>
+        <div className='display result'>{result ? result : ""}</div>
       </div>
     </div>
   );
